@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceListItemSmall" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/drawer_item_title" android:background="?android:activatedBackgroundIndicator" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeightSmall" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ImageView android:id="@id/reload_portal" android:padding="5.0dip" android:layout_width="?android:listPreferredItemHeightSmall" android:layout_height="?android:listPreferredItemHeightSmall" android:src="@drawable/reload_portal" android:contentDescription="@string/btn_reload_portal" />
+    <ImageView android:id="@id/next_page" android:padding="5.0dip" android:layout_width="?android:listPreferredItemHeightSmall" android:layout_height="?android:listPreferredItemHeightSmall" android:src="@drawable/next_page" android:contentDescription="@string/next_page" />
+    <ImageView android:id="@id/prev_page" android:padding="5.0dip" android:layout_width="?android:listPreferredItemHeightSmall" android:layout_height="?android:listPreferredItemHeightSmall" android:src="@drawable/previous_page" android:contentDescription="@string/previous_page" />
+    <ImageView android:id="@id/profile_info" android:padding="5.0dip" android:layout_width="?android:listPreferredItemHeightSmall" android:layout_height="?android:listPreferredItemHeightSmall" android:src="@drawable/info" android:contentDescription="@string/show_profile_info_title" />
+    <ImageView android:id="@id/profile_settings" android:padding="5.0dip" android:layout_width="?android:listPreferredItemHeightSmall" android:layout_height="?android:listPreferredItemHeightSmall" android:src="@drawable/gear" android:contentDescription="@string/change_profile_settings_title" />
+</LinearLayout>

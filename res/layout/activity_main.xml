@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:tag="layout/activity_main_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.design.widget.CoordinatorLayout android:orientation="horizontal" android:id="@id/main_layout" android:tag="binding_1" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/web_view_layout" layout="@layout/webvideolayout" />
+        <include android:id="@id/ads_container" layout="@layout/ads_container" />
+        <include android:id="@id/screen_buttons" layout="@layout/screen_buttons_fragment_base" />
+        <include android:id="@id/touch_control" layout="@layout/touch_control_fragment_base" />
+        <include android:id="@id/splash_screen" layout="@layout/partial_fragment_splash_screen" />
+    </android.support.design.widget.CoordinatorLayout>
+    <ListView android:layout_gravity="start" android:id="@id/drawer" android:background="@color/drawer_background" android:scrollbars="vertical" android:layout_width="240.0dip" android:layout_height="fill_parent" android:layout_marginTop="?toolbar_height" android:divider="@color/drawer_item_divider_color" android:dividerHeight="1.0dip" android:choiceMode="singleChoice" />
+    <include layout="@layout/video_debug_layout" />
+</android.support.v4.widget.DrawerLayout>

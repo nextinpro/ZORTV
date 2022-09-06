@@ -1,0 +1,42 @@
+.class final Lamz$a$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lamz$a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x8
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field public final a:Landroid/text/style/CharacterStyle;
+
+.field public final b:I
+
+.field public final c:I
+
+
+# direct methods
+.method public constructor <init>(Landroid/text/style/CharacterStyle;II)V
+    .locals 0
+
+    .line 794
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 795
+    iput-object p1, p0, Lamz$a$a;->a:Landroid/text/style/CharacterStyle;
+
+    .line 796
+    iput p2, p0, Lamz$a$a;->b:I
+
+    .line 797
+    iput p3, p0, Lamz$a$a;->c:I
+
+    return-void
+.end method

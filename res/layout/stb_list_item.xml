@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:enabled="true" android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/stb_name" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="66.0dip" android:text="" android:layout_weight="1.0" android:contentDescription="@string/modify_profile_button_description" style="@style/Base.Theme.AppCompat.Light" />
+    <ImageButton android:gravity="center_vertical" android:id="@id/stb_rem_btn" android:layout_width="66.0dip" android:layout_height="66.0dip" android:src="@drawable/button_delete" android:layout_weight="0.0" android:contentDescription="@string/delete_profile_button_description" style="@style/Base.Theme.AppCompat.Light" />
+</LinearLayout>

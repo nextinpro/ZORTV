@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mvas.stbemu.ExPreferenceEdit android:title="@string/profile_name" android:key="name" android:summary="@string/profile_name" android:defaultValue="@string/new_profile" />
+    <PreferenceScreen android:title="@string/Portal_settings" android:key="portal_settings" android:enabled="false">
+        <com.mvas.stbemu.ExPreferenceEdit android:title="@string/portal_url" android:key="portal_url" android:summary="@string/portal_url" android:defaultValue="http://" />
+        <com.mvas.stbemu.ExPreferenceEdit android:title="@string/portal_language" android:key="language" android:summary="@string/portal_language" android:defaultValue="ru" />
+        <PreferenceScreen android:title="@string/HTTP_proxy_settings">
+            <CheckBoxPreference android:title="@string/use_http_proxy" android:key="use_http_proxy" android:summary="" android:defaultValue="false" />
+            <EditTextPreference android:title="@string/proxy_host" android:key="proxy_host" android:dependency="use_http_proxy" android:defaultValue="127.0.0.1" />
+            <EditTextPreference android:numeric="decimal|signed" android:title="@string/proxy_port" android:key="proxy_port" android:dependency="use_http_proxy" android:defaultValue="3128" android:inputType="numberSigned" />
+            <CheckBoxPreference android:title="@string/use_web_proxy_enabled" android:key="proxy_web_proxy_enabled" android:dependency="use_http_proxy" android:defaultValue="false" />
+            <EditTextPreference android:title="@string/use_web_proxy_connection_name" android:key="proxy_web_proxy_conn_name" android:dependency="proxy_web_proxy_enabled" android:defaultValue="" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:title="@string/is_internal_portal" android:key="is_internal_portal" android:summary="@string/is_internal_portal_summary" android:defaultValue="false" />
+        <com.mvas.stbemu.ExPreferenceEdit android:title="@string/internal_portal_url_title" android:key="internal_portal_url" android:summary="@string/internal_portal_url_summary" android:defaultValue="" />
+        <Preference android:title="Install internal portal" android:key="install_portal_button" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/stb_configuration_title" android:key="stb_configuration">
+        <ListPreference android:title="@string/stb_model" android:key="stb_model" />
+        <ListPreference android:title="@string/firmware" android:key="firmware" />
+        <PreferenceScreen android:title="@string/firmware_settings" android:key="firmware_settings">
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/player_engine_version" android:key="firmware_player_engine_ver" android:summary="@string/player_engine_version" android:defaultValue="0x00000566" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/javascript_api_version" android:key="firmware_js_api_ver" android:summary="@string/javascript_api_version" android:defaultValue="328" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/stb_api_version" android:key="firmware_stb_api_ver" android:summary="@string/stb_api_version" android:defaultValue="134" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/image_version" android:key="image_version" android:summary="@string/image_version" android:defaultValue="@string/mag_profile_default_image_version" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/image_description" android:key="image_description" android:summary="@string/image_description" android:defaultValue="@string/mag_profile_default_image_description" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/image_date" android:key="image_date" android:summary="@string/image_date" android:defaultValue="@string/mag_profile_default_image_date" />
+            <CheckBoxPreference android:title="@string/use_custom_user_agent_title" android:key="use_custom_user_agent" android:summary="@string/use_custom_user_agent_summary" android:defaultValue="false" />
+            <EditTextPreference android:title="User-Agent" android:key="custom_user_agent" android:summary="User-Agent string" android:dependency="use_custom_user_agent" android:defaultValue="" />
+        </PreferenceScreen>
+        <ListPreference android:title="@string/user_agent" android:key="user_agent" android:summary="@string/user_agent" />
+        <ListPreference android:title="@string/display_resolution" android:key="display_resolution" android:summary="@string/display_resolution" />
+        <com.mvas.stbemu.ExPreferenceEdit android:title="@string/mac_address" android:key="mac_address" android:summary="@string/mac_address" android:defaultValue="00:1A:79:00:00:00" />
+        <com.mvas.stbemu.ExPreferenceEdit android:title="@string/serial_number" android:key="serial_number" android:summary="@string/serial_number" android:defaultValue="012020X000000" />
+        <PreferenceScreen android:title="@string/device_id_title" android:key="device_id_settings">
+            <CheckBoxPreference android:title="@string/use_mac_based_device_id_title" android:key="use_mac_based_device_id" android:summary="@string/use_mac_based_device_id_summary" android:defaultValue="false" android:disableDependentsState="true" />
+            <CheckBoxPreference android:title="Send Device ID" android:key="send_device_id" android:summary="Send Device ID to service provider" android:defaultValue="false" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/device_id_seed_title" android:key="device_id_seed" android:summary="@string/device_id_seed_summary" android:dependency="" android:defaultValue="" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/device_id" android:key="device_id" android:dependency="use_mac_based_device_id" android:defaultValue="" />
+            <CheckBoxPreference android:title="@string/custom_dev_id2_signature_title" android:key="device_custom_dev_id2" android:summary="@string/custom_dev_id2_signature_summary" android:defaultValue="false" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/device_id2" android:key="device_id2" android:defaultValue="" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/device_signature" android:key="device_signature" android:defaultValue="" />
+            <Preference android:title="@string/reset_device_id_title" android:key="reset_device_id_btn" android:summary="@string/reset_device_id_summary" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/hardware_settings" android:key="hardware_settings">
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/hardware_vendor" android:key="hardware_vendor" android:summary="@string/hardware_vendor" android:defaultValue="@string/mag_profile_default_hardware_vendor" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/hardware_version" android:key="hardware_version" android:summary="@string/hardware_version" android:defaultValue="@string/mag_profile_default_hardware_version" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:title="@string/enable_ministra_support_title" android:key="enable_ministra_compatibility" android:summary="@string/enable_ministra_support_summary" android:defaultValue="false" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/media_player_settings" android:key="player_settings">
+        <ListPreference android:entries="@array/player_list" android:title="@string/select_media_player" android:key="media_player" android:defaultValue="-1" android:entryValues="@array/player_list_values" />
+        <CheckBoxPreference android:title="@string/media_player_per_channel" android:key="media_player_per_channel" android:summary="@string/media_player_per_channel_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/show_player_name_title" android:key="show_player_name" android:summary="@string/show_player_name_summary" android:defaultValue="false" />
+        <PreferenceScreen android:title="@string/UDPXY_settings" android:key="udpxy_settings">
+            <CheckBoxPreference android:title="@string/enable_udpxy" android:key="udpxy_enabled" android:summary="" android:defaultValue="false" />
+            <com.mvas.stbemu.ExPreferenceEdit android:title="@string/udpxy_url" android:key="udpxy_url" android:summary="" android:dependency="udpxy_enabled" android:defaultValue="http://192.168.0.1:4022" />
+            <ListPreference android:persistent="true" android:entries="@array/stream_protocols_list" android:title="@string/overwrite_stream_protocol" android:key="overwrite_stream_protocol" android:summary="@string/overwrite_stream_protocol_summary" android:dependency="udpxy_enabled" android:defaultValue="" android:entryValues="@array/stream_protocols_values" />
+        </PreferenceScreen>
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/Advanced_settings" android:key="advances_settings">
+        <CheckBoxPreference android:title="@string/use_native_auth_dialog" android:key="use_alt_stalker_auth_dialog" android:summary="@string/use_alt_stalker_auth_dialog_summary" android:defaultValue="false" />
+        <MultiSelectListPreference android:entries="@array/css_patches_entries" android:title="@string/apply_css_patches_title" android:key="apply_css_patches" android:defaultValue="@array/default_values" android:entryValues="@array/css_patches_values" />
+        <CheckBoxPreference android:title="@string/limit_max_connections" android:key="limit_max_connections" android:summary="Set this flag if your portal doesn't load correctly." android:defaultValue="false" />
+        <EditTextPreference android:numeric="decimal" android:title="Generic requests" android:key="generic_connections_limit" android:summary="Connection limit for generic requests" android:dependency="limit_max_connections" android:defaultValue="5" />
+        <EditTextPreference android:numeric="decimal" android:title="AJAX requests" android:key="ajax_connections_limit" android:summary="Connection limit for AJAX requests" android:dependency="limit_max_connections" android:defaultValue="5" android:inputType="numberDecimal" />
+        <CheckBoxPreference android:title="Use alternative web page scaling on Android KitKat." android:key="use_alternative_web_view_scale_method" android:summary="Use alternative scale method" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Allow emulator detection" android:key="allow_emulator_ua_detection" android:summary="Allow emulator detection via User Agent" android:defaultValue="false" />
+        <CheckBoxPreference android:title="Fix background color" android:key="fix_background_color" android:summary="Set this flag if your web windows is not transparent when it should." android:defaultValue="false" />
+        <CheckBoxPreference android:title="Fix links to local files" android:key="fix_local_file_scheme" android:summary="Fix links with 'file:// scheme'." android:defaultValue="false" />
+        <CheckBoxPreference android:title="Fix AJAX support" android:key="fix_ajax" android:summary="Fix broken AJAX support in Android." android:defaultValue="true" />
+        <PreferenceCategory android:title="@string/external_player_stb_config" android:key="external_player_configuration">
+            <CheckBoxPreference android:title="Send return to channels list event" android:key="external_player_send_key_event" android:summary="Send key event to return to channels list from external player.r\nTested only on Stalker portal!r\nMay work incorrect on other portals!" android:defaultValue="false" />
+            <CheckBoxPreference android:title="Send 'BACK' key event" android:key="external_player_send_back_key_event" android:dependency="external_player_send_key_event" android:defaultValue="false" />
+            <CheckBoxPreference android:title="Send 'EXIT' key event" android:key="external_player_send_exit_key_event" android:dependency="external_player_send_key_event" android:defaultValue="false" />
+            <CheckBoxPreference android:title="Send 'OK' key event" android:key="external_player_send_ok_key_event" android:dependency="external_player_send_key_event" android:defaultValue="false" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+</PreferenceScreen>

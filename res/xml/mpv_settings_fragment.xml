@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_hardware_decoding_title" android:key="hardware_decoding" android:summary="@string/pref_hardware_decoding_summary" android:defaultValue="true" />
+    <ListPreference android:entries="@array/deband_entries" android:title="@string/pref_video_debanding_title" android:key="video_debanding" android:summary="@string/pref_video_debanding_summary" android:entryValues="@array/deband_values" />
+    <ListPreference android:entries="@array/video_sync" android:title="@string/pref_video_sync_title" android:key="video_sync" android:summary="@string/pref_video_sync_summary" android:defaultValue="@string/pref_video_sync_default" android:entryValues="@array/video_sync" />
+    <CheckBoxPreference android:title="@string/pref_video_interpolation_title" android:key="video_interpolation" android:summary="@string/pref_video_interpolation_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_video_fastdecode_title" android:key="video_fast_decode" android:summary="@string/pref_video_fastdecode_summary" android:defaultValue="false" />
+</PreferenceScreen>

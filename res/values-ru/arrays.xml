@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="screen_orientation_list">
+        <item>Зависит от сенсора поворота</item>
+        <item>Ландшафт</item>
+        <item>Перевернутый ландшафт</item>
+    </string-array>
+</resources>

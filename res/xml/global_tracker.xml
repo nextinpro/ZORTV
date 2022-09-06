@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <screenName name="com.mvas.stbemu.activities.MainActivity">Main screen	</screenName>
+    <screenName name="com.mvas.stbemu.activities.AppSettings">Settings	</screenName>
+    <screenName name="com.mvas.stbemu.activities.AppSettings$AboutFragment">About page	</screenName>
+    <screenName name="com.mvas.stbemu.activities.AppSettings$CommonSettingsFragment">Common settings page	</screenName>
+    <screenName name="com.mvas.stbemu.activities.AppSettings$ProfilesFragment">Profiles page	</screenName>
+    <screenName name="com.mvas.stbemu.activities.AppSettings$DonateFragment">Donate page	</screenName>
+    <screenName name="com.mvas.stbemu.activities.AppSettings$DonateCoinsFragment">Donate coins page	</screenName>
+    <string name="ga_trackingId">UA-68784610-1	</string>
+!--Enable automatic activity tracking-->	<bool name="ga_autoActivityTracking">true	</bool>
+    <bool name="ga_reportUncaughtExceptions">true	</bool>
+    <string name="ga_sampleFrequency">100	</string>
+    <integer name="ga_sessionTimeout">300	</integer>
+    <integer name="ga_dispatchPeriod">60	</integer>
+</resources>

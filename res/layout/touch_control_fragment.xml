@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/touch_control_layout" android:tag="layout/touch_control_fragment_0" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:layout_gravity="center|right|top" android:id="@id/switch_to_touch" android:background="@drawable/switch_to_buttons" android:layout_width="@dimen/emu_btn_round_size" android:layout_height="@dimen/emu_btn_round_size" android:layout_margin="@dimen/emu_btn_margin" android:contentDescription="@string/switch_to_touch" style="@style/ImageControl" />
+</FrameLayout>

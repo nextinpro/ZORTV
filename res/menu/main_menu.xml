@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item android:icon="@drawable/action_settings" android:id="@id/preferences" android:title="@string/preferences" />
+        <item android:id="@id/action_mediaroute" android:visible="false" android:title="@string/action_chromecast" app:actionProviderClass="android.support.v7.app.MediaRouteActionProvider" app:showAsAction="always" />
+        <item android:id="@id/btn_reload_portal" android:visible="false" android:title="@string/btn_reload_portal" app:showAsAction="never" />
+        <item android:id="@id/btn_about_app" android:visible="false" android:title="@string/about_app_title" app:showAsAction="never" />
+        <item android:icon="@drawable/content_picture" android:id="@id/btn_stb_aspect_ratio" android:title="@string/btn_stb_aspect_ratio" app:actionProviderClass="com.mvas.stbemu.gui.menu.AspectRatioActionProvider">
+            <menu>
+                <group android:checkableBehavior="all">
+                    <item android:id="@id/aspect_ratio_auto" android:title="@string/aspect_ratio_auto" />
+                </group>
+                <item android:menuCategory="secondary" android:title="@string/menu_aspect_ratio_standard">
+                    <menu>
+                        <group android:checkableBehavior="all">
+                            <item android:id="@id/aspect_ratio_16_9" android:title="@string/aspect_ratio_16_9" />
+                            <item android:id="@id/aspect_ratio_16_10" android:title="@string/aspect_ratio_16_10" />
+                            <item android:id="@id/aspect_ratio_4_3" android:title="@string/aspect_ratio_4_3" />
+                            <item android:id="@id/aspect_ratio_2_1" android:title="@string/aspect_ratio_2_1" />
+                            <item android:id="@id/aspect_ratio_21_9" android:title="@string/aspect_ratio_21_9" />
+                        </group>
+                    </menu>
+                </item>
+                <item android:menuCategory="secondary" android:title="@string/menu_aspect_ratio_non_standard">
+                    <menu>
+                        <group android:checkableBehavior="all">
+                            <item android:id="@id/aspect_ratio_1_1" android:title="@string/aspect_ratio_1_1" />
+                            <item android:id="@id/aspect_ratio_5_4" android:title="@string/aspect_ratio_5_4" />
+                            <item android:id="@id/aspect_ratio_11_8" android:title="@string/aspect_ratio_11_18" />
+                            <item android:id="@id/aspect_ratio_14_10" android:title="@string/aspect_ratio_14_10" />
+                            <item android:id="@id/aspect_ratio_3_2" android:title="@string/aspect_ratio_3_2" />
+                            <item android:id="@id/aspect_ratio_14_9" android:title="@string/aspect_ratio_14_9" />
+                        </group>
+                    </menu>
+                </item>
+                <item android:menuCategory="secondary" android:title="@string/menu_aspect_ratio_wide_screen">
+                    <menu>
+                        <group android:checkableBehavior="all">
+                            <item android:id="@id/aspect_ratio_235_100" android:title="@string/aspect_ratio_235_100" />
+                            <item android:id="@id/aspect_ratio_239_100" android:title="@string/aspect_ratio_239_100" />
+                            <item android:id="@id/aspect_ratio_2414_1000" android:title="@string/aspect_ratio_2414_1000" />
+                            <item android:id="@id/aspect_ratio_276_100" android:title="@string/aspect_ratio_276_100" />
+                        </group>
+                    </menu>
+                </item>
+                <item android:menuCategory="secondary" android:title="@string/menu_aspect_ratio_dynamic">
+                    <menu>
+                        <group android:checkableBehavior="all">
+                            <item android:id="@id/aspect_ratio_fit_horizontal" android:title="@string/aspect_ratio_fit_horizontal" />
+                            <item android:id="@id/aspect_ratio_fit_vertical" android:title="@string/aspect_ratio_fit_vertical" />
+                            <item android:id="@id/aspect_ratio_fill" android:title="@string/aspect_ratio_fill" />
+                        </group>
+                    </menu>
+                </item>
+            </menu>
+        </item>
+        <item android:icon="@drawable/hardware_keyboard" android:id="@id/btn_keyboard" android:title="@string/keyboard" />
+        <item android:id="@id/extra_buttons" android:title="@string/extra_buttons">
+            <menu>
+                <item android:id="@id/btn_stb_exit" android:title="@string/btn_stb_exit" />
+                <item android:id="@id/btn_stb_service" android:title="@string/btn_stb_service" />
+                <item android:id="@id/btn_stb_info" android:title="@string/btn_stb_info" />
+                <item android:id="@id/btn_stb_menu" android:title="@string/btn_stb_menu" />
+                <item android:title="@string/btn_stb_setup" />
+                <item android:id="@id/btn_stb_app" android:title="@string/btn_app" />
+                <item android:id="@id/btn_change_aspect_ratio" android:title="@string/btn_change_aspect_ratio" />
+            </menu>
+        </item>
+    </group>
+    <item android:id="@id/btn_profile_info" android:visible="false" android:title="@string/btn_profile_info" app:showAsAction="never" />
+    <item android:id="@id/menu_select_profile" android:title="@string/select_profile" app:actionProviderClass="com.mvas.stbemu.gui.menu.ProfileListActionProvider" app:showAsAction="never">
+        <menu />
+    </item>
+    <item android:id="@id/menu_select_media_player" android:title="@string/select_media_player" app:actionProviderClass="com.mvas.stbemu.gui.menu.MediaPlayerActionProvider" app:showAsAction="never">
+        <menu />
+    </item>
+    <item android:id="@id/menu_select_subtitle" android:title="@string/btn_select_subtitle" app:actionProviderClass="com.mvas.stbemu.gui.menu.SubtitleLanguageActionProvider" app:showAsAction="never">
+        <menu />
+    </item>
+    <item android:id="@id/menu_select_audio_lang" android:title="@string/btn_select_audio_lang" app:actionProviderClass="com.mvas.stbemu.gui.menu.AudioLanguageActionProvider" app:showAsAction="never">
+        <menu />
+    </item>
+    <group>
+        <item android:id="@id/btn_exit" android:title="@string/btn_exit" />
+    </group>
+</menu>

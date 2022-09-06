@@ -1,0 +1,12 @@
+.class public final Laqw;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Laqw$a;,
+        Laqw$b;,
+        Laqw$c;
+    }
+.end annotation

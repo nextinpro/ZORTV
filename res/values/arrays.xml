@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="browser_scaling_method_entries">
+        <item>Default</item>
+        <item>Alternative 1</item>
+        <item>Alternative 2</item>
+    </string-array>
+    <string-array name="browser_scaling_method_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="css_patches_entries">
+        <item>Fix invisible login/password in Stalker</item>
+        <item>Fix long channel numbers in Stalker</item>
+        <item>"Fix logo position in Stalker's settings"</item>
+        <item>Fix channel name position in OSD in Stalker</item>
+    </string-array>
+    <string-array name="css_patches_values">
+        <item>stalker_input_patch.css</item>
+        <item>stalker_long_channel_numbers.css</item>
+        <item>stalker_settings_logo.css</item>
+        <item>stalker_tv_full_screen_osd.css</item>
+    </string-array>
+    <string-array name="days_of_week_entries">
+        <item>@string/day_of_week_sunday</item>
+        <item>@string/day_of_week_monday</item>
+        <item>@string/day_of_week_tuesday</item>
+        <item>@string/day_of_week_wednesday</item>
+        <item>@string/day_of_week_thursday</item>
+        <item>@string/day_of_week_friday</item>
+        <item>@string/day_of_week_saturday</item>
+    </string-array>
+    <string-array name="days_of_week_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="deband_entries">
+        <item>Disabled</item>
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+    <string-array name="deband_values">
+        <item></item>
+        <item>gradfun</item>
+        <item>gpu</item>
+    </string-array>
+    <array name="default_values" />
+    <string-array name="drawing_acceleration_list">
+        <item>Disabled</item>
+        <item>Software acceleration</item>
+        <item>Hardware acceleration</item>
+    </string-array>
+    <string-array name="drawing_acceleration_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="entries_lang">
+        <item>@string/system_default</item>
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+    <string-array name="entryvalues_lang">
+        <item>default</item>
+        <item>en</item>
+        <item>ru</item>
+        <item>uk</item>
+    </string-array>
+    <string-array name="ijk_fflags_entries">
+        <item>ignidx - Ignore index.</item>
+        <item>fastseek - Enable fast, but inaccurate seeks for some formats.</item>
+        <item>genpts - Generate PTS.</item>
+        <item>nofillin - Do not fill in missing values that can be exactly calculated.</item>
+        <item>noparse - Disable AVParsers, this needs +nofillin too.</item>
+        <item>igndts - Ignore DTS.</item>
+        <item>discardcorrupt - Discard corrupted frames.</item>
+        <item>sortdts - Try to interleave output packets by DTS.</item>
+        <item>keepside - Do not merge side data.</item>
+        <item>latm - Enable RTP MP4A-LATM payload.</item>
+        <item>nobuffer - Reduce the latency introduced by optional buffering.</item>
+        <item>bitexact - Only write platform-, build- and time-independent data. This ensures that file and data checksums are reproducible and match between platforms. Its primary use is for regression testing.</item>
+    </string-array>
+    <string-array name="ijk_fflags_values">
+        <item>ignidx</item>
+        <item>fastseek</item>
+        <item>genpts</item>
+        <item>nofillin</item>
+        <item>noparse</item>
+        <item>igndts</item>
+        <item>discardcorrupt</item>
+        <item>sortdts</item>
+        <item>keepside</item>
+        <item>latm</item>
+        <item>nobuffer</item>
+        <item>bitexact</item>
+    </string-array>
+    <string-array name="ijk_pixel_format_entries">
+        <item>Auto Select</item>
+        <item>RGB 565</item>
+        <item>RGB 888X</item>
+        <item>YV12</item>
+    </string-array>
+    <string-array name="ijk_pixel_format_values">
+        <item></item>
+        <item>fcc-rv16</item>
+        <item>fcc-rv32</item>
+        <item>fcc-yv12</item>
+    </string-array>
+    <string-array name="keyboard_language_entries">
+        <item>English</item>
+        <item>Russian</item>
+        <item>Ukrainian</item>
+    </string-array>
+    <string-array name="keyboard_language_values">
+        <item>eng</item>
+        <item>rus</item>
+        <item>ukr</item>
+    </string-array>
+    <string-array name="keyboard_type_entries">
+        <item>Native keyboard</item>
+        <item>Software keyboard</item>
+    </string-array>
+    <string-array name="keyboard_type_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="player_list">
+        <item>@string/auto_player_name</item>
+        <item>@string/ijk_player_name</item>
+        <item>@string/exo_player_name</item>
+        <item>@string/internal_player_name</item>
+        <item>@string/external_player_name</item>
+    </string-array>
+    <string-array name="player_list_values">
+        <item>auto</item>
+        <item>ijk</item>
+        <item>exo</item>
+        <item>internal</item>
+        <item>external</item>
+    </string-array>
+    <string-array name="scaler_list_entries">
+        <item>bilinear</item>
+        <item>spline36</item>
+        <item>lanczos</item>
+        <item>ewa_lanczos</item>
+        <item>ewa_lanczossharp</item>
+        <item>mitchell</item>
+    </string-array>
+    <string-array name="scaler_list_values">
+        <item>bilinear</item>
+        <item>spline36</item>
+        <item>lanczos</item>
+        <item>ewa_lanczos</item>
+        <item>ewa_lanczossharp</item>
+        <item>mitchell</item>
+    </string-array>
+    <string-array name="screen_orientation_list">
+        <item>@string/screen_orientation_sensor</item>
+        <item>@string/screen_orientation_landscape</item>
+        <item>@string/screen_orientation_reversed_landscape</item>
+    </string-array>
+    <string-array name="screen_orientation_values">
+        <item>sensor</item>
+        <item>landscape</item>
+        <item>reverse_landscape</item>
+    </string-array>
+    <string-array name="soft_keyboard_method_entries">
+        <item>@string/default_name</item>
+        <item>@string/forced</item>
+    </string-array>
+    <string-array name="soft_keyboard_method_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="stream_protocols_list">
+        <item>Default</item>
+        <item>UDP</item>
+        <item>RTP</item>
+    </string-array>
+    <string-array name="stream_protocols_values">
+        <item>0</item>
+        <item>udp</item>
+        <item>rtp</item>
+    </string-array>
+    <string-array name="temporal_scaler_entries">
+        <item>mitchell</item>
+        <item>oversample</item>
+        <item>linear</item>
+    </string-array>
+    <string-array name="temporal_scaler_values">
+        <item>mitchell</item>
+        <item>oversample</item>
+        <item>linear</item>
+    </string-array>
+    <string-array name="video_sync">
+        <item>audio</item>
+        <item>display-resample</item>
+        <item>display-resample-vdrop</item>
+        <item>display-vdrop</item>
+        <item>display-adrop</item>
+    </string-array>
+</resources>

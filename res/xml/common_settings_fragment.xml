@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/common_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/entries_lang" android:title="@string/lang_title" android:key="app_language" android:summary="" android:defaultValue="default" android:dialogTitle="@string/lang_dialog_title" android:entryValues="@array/entryvalues_lang" />
+    <CheckBoxPreference android:title="@string/hide_navigation_bar" android:key="hide_navigation_bar" android:summary="@string/hide_navigation_bar_summary" />
+    <CheckBoxPreference android:title="@string/always_show_overlay_buttons" android:key="always_show_overlay_buttons" android:summary="@string/always_show_overlay_buttons_summary" android:defaultValue="true" />
+    <EditTextPreference android:numeric="decimal" android:title="@string/controls_display_timeout" android:key="controls_display_timeout" android:defaultValue="5000" android:inputType="numberDecimal" />
+    <ListPreference android:entries="@array/drawing_acceleration_list" android:title="@string/activity_hardware_acceleration_title" android:key="activity_hardware_acceleration" android:summary="Enable acceleration for rendering.\nCaution: enabled hardware acceleration may cause incorrect rendering on unsupported devices.\nRequires restart." android:defaultValue="0" android:dialogTitle="@string/activity_hardware_acceleration_title" android:entryValues="@array/drawing_acceleration_values" />
+    <CheckBoxPreference android:title="@string/pause_media_in_background_title" android:key="pause_media_in_background" android:summary="@string/pause_media_in_background_summary" android:dependency="pip_mode_on_pause" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/pip_mode_on_pause" android:key="pip_mode_on_pause" android:summary="@string/pip_mode_on_pause_summary" android:disableDependentsState="true" />
+    <ListPreference android:entries="@array/screen_orientation_list" android:title="@string/screen_orientation" android:key="screen_orientation" android:summary="@string/screen_orientation_summary" android:defaultValue="sensor" android:entryValues="@array/screen_orientation_values" />
+    <CheckBoxPreference android:title="@string/settings_password_enabled_title" android:key="settings_password_protection" />
+    <EditTextPreference android:title="@string/settings_password_title" android:key="settings_password" android:summary="@string/settings_password_summary" android:dependency="settings_password_protection" android:inputType="textPassword" />
+    <PreferenceScreen android:title="@string/remote_control_settings_title" android:key="rc_settings">
+        <CheckBoxPreference android:title="@string/enable_rc_title" android:key="rc_enabled" android:summary="@string/remote_control_settings_descr" android:defaultValue="true" />
+        <EditTextPreference android:maxLength="32" android:title="@string/rc_device_name_title" android:key="rc_device_name" android:summary="@string/rc_device_name_summary" android:defaultValue="STB Emulator" />
+        <EditTextPreference android:maxLength="32" android:title="@string/rc_password_title" android:key="rc_password" android:summary="@string/rc_password_summary" android:defaultValue="" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="@string/startup_settings" android:key="pref_key_startup_settings" android:summary="@string/startup_settings_summary">
+        <CheckBoxPreference android:title="@string/autostart_on_boot" android:key="autostart_on_boot" android:summary="@string/boot_external_storage_info" />
+    </PreferenceCategory>
+    <PreferenceScreen android:title="Android TV settings..." android:key="android_tv_settings">
+        <CheckBoxPreference android:title="@string/enable_android_tv_recommendations_title" android:key="recommendations_service_enabled" android:summary="@string/enable_android_tv_recommendations_summary" android:defaultValue="true" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Browser settings..." android:key="browser_settings">
+        <ListPreference android:entries="@array/browser_scaling_method_entries" android:title="@string/browser_scaling_method_title" android:key="browser_scaling_method" android:summary="@string/browser_scaling_method_summary" android:defaultValue="-1" android:entryValues="@array/browser_scaling_method_values" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/network_settings_title" android:key="network_settings">
+        <CheckBoxPreference android:title="@string/enable_network_cache_title" android:key="network_enable_cache" android:summary="@string/enable_network_cache_summary" android:defaultValue="true" />
+        <EditTextPreference android:maxLength="5" android:title="@string/network_cache_size_title" android:key="network_cache_size" android:summary="@string/network_cache_size_summary" android:defaultValue="20480" android:inputType="numberDecimal" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="Keyboard settings...">
+        <ListPreference android:entries="@array/keyboard_type_entries" android:title="@string/keyboard_type" android:key="keyboard_type" android:summary="@string/keyboard_type_summary" android:defaultValue="0" android:entryValues="@array/keyboard_type_values" />
+        <MultiSelectListPreference android:entries="@array/keyboard_language_entries" android:title="@string/software_keyboard_languages" android:key="keyboard_languages" android:defaultValue="@array/default_values" android:entryValues="@array/keyboard_language_values" />
+        <CheckBoxPreference android:title="@string/keyboard_show_focus" android:key="keyboard_show_focus" android:summary="@string/keyboard_show_focus_summary" android:defaultValue="true" />
+        <ListPreference android:entries="@array/soft_keyboard_method_entries" android:title="@string/software_keyboard_input_method_title" android:key="soft_keyboard_im" android:summary="@string/software_keyboard_input_method_summary" android:defaultValue="sensor" android:entryValues="@array/soft_keyboard_method_values" />
+    </PreferenceScreen>
+</PreferenceScreen>

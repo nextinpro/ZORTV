@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:title="@string/common_settings" android:summary="@string/common_settings_summary" android:fragment="com.mvas.stbemu.prefs.fragments.CommonSettingsFragment" />
+    <header android:title="@string/player_settings" android:fragment="com.mvas.stbemu.prefs.fragments.PlayerSettingsFragment" />
+    <header android:id="@id/key_configuration_header" android:title="@string/key_configuration" android:summary="@string/configure_key_bindings_summary" />
+<!--
+    <header android:id="@id/header_profiles" android:title="@string/stb_settings" android:summary="@string/configure_profiles_summary" android:fragment="com.mvas.stbemu.prefs.fragments.ProfilesFragment" />
+-->
+<!--
+    <header android:id="@id/app_update_header" android:title="@string/stb_update_settings_title" android:summary="@string/configure_update_settings_summary" android:fragment="com.mvas.stbemu.prefs.fragments.UpdateSettingsFragment" />
+-->
+    <header android:id="@id/header_debug_screen" android:title="@string/stb_debug_config" android:summary="@string/stb_debug_config_summary" android:fragment="com.mvas.stbemu.prefs.fragments.DebugFragment" />
+    <header android:id="@id/save_restore_settings" android:title="@string/title_activity_import_export">
+        <intent android:targetPackage="@string/application_id" android:targetClass="com.mvas.stbemu.activities.SaveRestoreSettingsActivity" />
+    </header>
+    <header android:id="@id/header_about_screen" android:title="@string/stb_about" android:summary="@string/stb_about_summary" android:fragment="com.mvas.stbemu.prefs.fragments.AboutFragment" />
+</preference-headers>

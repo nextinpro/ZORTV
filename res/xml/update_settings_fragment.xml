@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/common_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/check_updates_title" android:key="" />
+    <Preference android:title="@string/last_check_timestamp_title" android:selectable="true" android:key="" android:summary="" />
+    <CheckBoxPreference android:title="@string/auto_check_updates_title" android:key="" android:summary="@string/auto_check_updates_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/update_use_root_title" android:key="use_root" android:summary="@string/update_use_root_summary" android:dependency="" android:defaultValue="false" />
+<!--
+    <CheckBoxPreference android:title="@string/auto_update_enabled_title" android:key="auto_update_enabled" android:summary="@string/auto_update_enabled_summary" android:dependency="use_root" android:defaultValue="false" />
+-->
+    <MultiSelectListPreference android:entries="@array/days_of_week_entries" android:title="@string/days_to_install_updates_title" android:key="days_to_install" android:dependency="auto_update_enabled" android:defaultValue="@array/default_values" android:entryValues="@array/days_of_week_values" />
+    <com.mvas.stbemu.activities.TimePreference android:title="@string/time_to_install_updates_title" android:key="time_to_install" android:dependency="auto_update_enabled" android:defaultValue="04:00" />
+</PreferenceScreen>

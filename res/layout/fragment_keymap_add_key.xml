@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:tag="layout/fragment_keymap_add_key_0" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:paddingBottom="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/press_a_key_on_your_remote_control_then_select_an_action_from_the_list_below" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ignores_arrow_keys_and_ok" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="bottom" android:layout_gravity="center_horizontal" android:id="@id/pressed_key_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_name" android:layout_weight="1.0" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="center_horizontal" android:id="@id/pressed_key_code" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/key_code" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/remote_control" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/remote_control_id_text" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rc_id" />
+    </LinearLayout>
+    <Spinner android:layout_gravity="center_horizontal" android:id="@id/action_list" android:background="@drawable/key_action_item_drawable" android:nextFocusDown="@id/long_key_press_checkbox" android:layout_width="fill_parent" android:layout_height="wrap_content" android:nextFocusForward="@id/long_key_press_checkbox" />
+    <CheckBox android:id="@id/long_key_press_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/long_key_press" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/save_key_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/keymap_btn_save_key" android:layout_weight="1.0" />
+        <Button android:id="@id/reset_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/keymap_btn_reset" android:layout_weight="1.0" />
+        <Button android:id="@id/cancel_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/keymap_btn_cancel" android:layout_weight="1.0" />
+        <Button android:id="@id/delete_btn" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/keymap_btn_delete" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

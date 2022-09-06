@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/debug_threads" android:key="debug_threads" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/debug_ajax" android:key="debug_ajax" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/debug_stub" android:key="debug_stub" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/debug_injections" android:key="debug_injections" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/debug_resources" android:key="debug_resources" android:defaultValue="false" />
+</PreferenceScreen>
